@@ -4,6 +4,7 @@
       "cpus": 4
     },
     "waitFor": "onCreateCommand",
+    "onCreateCommand": "sudo apt update && sudo apt -y install python3-opencv",
     "updateContentCommand": "python3 -m pip install -r requirements.txt && apt-get update && apt-get install libgl1",
     "postCreateCommand": "",
     "customizations": {
